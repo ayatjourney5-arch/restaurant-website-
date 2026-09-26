@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAVORÉ | Modern Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                SAVOR<span>É</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#booking" class="nav-btn">Book a Table</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+
+                <p class="eyebrow">WELCOME TO SAVORÉ</p>
+
+                <h1>
+                    Good food.<br>
+                    <span>Good mood.</span>
+                </h1>
+
+                <p class="hero-text">
+                    A modern dining experience where fresh ingredients,
+                    beautiful flavors and unforgettable moments come together.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#booking" class="btn btn-outline">Book a Table</a>
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
+                Scroll to explore
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+        <section class="features section">
+
+            <div class="container features-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">✦</div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>
+                        Carefully selected ingredients prepared fresh every day.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">♨</div>
+                    <h3>Expert Chefs</h3>
+                    <p>
+                        Passionate chefs turning simple ingredients into memorable dishes.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">♡</div>
+                    <h3>Made With Love</h3>
+                    <p>
+                        Every plate is prepared with attention, creativity and care.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENU ================= -->
+        <section class="menu-section section" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">OUR MENU</p>
+                    <h2>Something for <span>everyone.</span></h2>
+                    <p>
+                        Discover our selection of carefully crafted dishes.
+                    </p>
+                </div>
+
+
+                <div class="menu-tabs">
+
+                    <button class="menu-tab active" data-category="all">
+                        All
+                    </button>
+
+                    <button class="menu-tab" data-category="starters">
+                        Starters
+                    </button>
+
+                    <button class="menu-tab" data-category="mains">
+                        Main Course
+                    </button>
+
+                    <button class="menu-tab" data-category="desserts">
+                        Desserts
+                    </button>
+
+                    <button class="menu-tab" data-category="drinks">
+                        Drinks
+                    </button>
+
+                </div>
+
+
+                <div class="menu-grid" id="menuGrid">
+
+                    <article class="food-card" data-category="starters">
+                        <div class="food-image image-1">
+                            <span class="food-tag">Popular</span>
+                        </div>
+
+                        <div class="food-info">
+                            <div>
+                                <h3>Truffle Bruschetta</h3>
+                                <p>Toasted sourdough, tomatoes, herbs & truffle oil.</p>
+                            </div>
+                            <strong>$8</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="food-card" data-category="starters">
+                        <div class="food-image image-2"></div>
+
+                        <div class="food-info">
+                            <div>
+                                <h3>Crispy Calamari</h3>
+                                <p>Golden calamari with lemon herb aioli.</p>
+                            </div>
+                            <strong>$11</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="food-card" data-category="mains">
+                        <div class="food-image image-3">
+                            <span class="food-tag">Chef's Pick</span>
+                        </div>
+
+                        <div class="food-info">
+                            <div>
+                                <h3>Classic Pasta</h3>
+                                <p>Fresh pasta, parmesan, basil & rich tomato sauce.</p>
+                            </div>
+                            <strong>$16</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="food-card" data-category="mains">
+                        <div class="food-image image-4"></div>
+
+                        <div class="food-info">
+                            <div>
+                                <h3>Grilled Steak</h3>
+                                <p>Premium grilled steak with seasonal vegetables.</p>
+                            </div>
+                            <strong>$24</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="food-card" data-category="mains">
+                        <div class="food-image image-5"></div>
+
+                        <div class="food-info">
+                            <div>
+                                <h3>Garden Risotto</h3>
+                                <p>Creamy arborio rice with vegetables & parmesan.</p>
+                            </div>
+                            <strong>$17</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="food-card" data-category="desserts">
+                        <div class="food-image image-6"></div>
+
+                        <div class="food-info">
+                            <div>
+                                <h3>Chocolate Cake</h3>
+                                <p>Dark chocolate cake with vanilla cream.</p>
+                            </div>
+                            <strong>$9</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="food-card" data-category="desserts">
+                        <div class="food-image image-7"></div>
+
+                        <div class="food-info">
+                            <div>
+                                <h3>Berry Cheesecake</h3>
+                                <p>Classic cheesecake with fresh seasonal berries.</p>
+                            </div>
+                            <strong>$8</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="food-card" data-category="drinks">
+                        <div class="food-image image-8"></div>
+
+                        <div class="food-info">
+                            <div>
+                                <h3>Berry Mocktail</h3>
+                                <p>Fresh berries, citrus, mint & sparkling water.</p>
+                            </div>
+                            <strong>$7</strong>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <section class="about section" id="about">
+
+            <div class="container about-grid">
+
+                <div class="about-images">
+
+                    <div class="about-image large-image"></div>
+
+                    <div class="about-image small-image"></div>
+
+                    <div class="experience-badge">
+                        <strong>12+</strong>
+                        <span>Years of<br>experience</span>
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <p class="eyebrow">OUR STORY</p>
+
+                    <h2>
+                        Food that brings
+                        <span>people together.</span>
+                    </h2>
+
+                    <p>
+                        SAVORÉ began with a simple idea: great food should feel
+                        special without feeling complicated.
+                    </p>
+
+                    <p>
+                        Our kitchen combines fresh local ingredients with
+                        modern techniques and timeless recipes to create food
+                        that feels familiar, exciting and worth coming back for.
+                    </p>
+
+                    <div class="about-stats">
+
+                        <div>
+                            <strong>25+</strong>
+                            <span>Menu Items</span>
+                        </div>
+
+                        <div>
+                            <strong>4.9</strong>
+                            <span>Guest Rating</span>
+                        </div>
+
+                        <div>
+                            <strong>12</strong>
+                            <span>Years</span>
+                        </div>
+
+                    </div>
+
+                    <a href="#contact" class="text-link">
+                        Learn more about us →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+        <section class="services section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">WHAT WE OFFER</p>
+                    <h2>More than just <span>dining.</span></h2>
+                </div>
+
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <span class="service-number">01</span>
+                        <div class="service-icon">🍽</div>
+                        <h3>Fine Dining</h3>
+                        <p>
+                            Enjoy beautifully prepared dishes in a relaxed,
+                            welcoming atmosphere.
+                        </p>
+                    </div>
+
+
+                    <div class="service-card">
+                        <span class="service-number">02</span>
+                        <div class="service-icon">♨</div>
+                        <h3>Private Events</h3>
+                        <p>
+                            Celebrate birthdays, dinners and special moments
+                            with your guests.
+                        </p>
+                    </div>
+
+
+                    <div class="service-card">
+                        <span class="service-number">03</span>
+                        <div class="service-icon">✦</div>
+                        <h3>Takeaway</h3>
+                        <p>
+                            Your favorite SAVORÉ dishes packed fresh and ready
+                            to enjoy anywhere.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALLERY ================= -->
+        <section class="gallery section" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">OUR GALLERY</p>
+                    <h2>A taste of <span>SAVORÉ.</span></h2>
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item gallery-1"></div>
+                    <div class="gallery-item gallery-2"></div>
+                    <div class="gallery-item gallery-3"></div>
+                    <div class="gallery-item gallery-4"></div>
+                    <div class="gallery-item gallery-5"></div>
+                    <div class="gallery-item gallery-6"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOOKING ================= -->
+        <section class="booking section" id="booking">
+
+            <div class="container booking-wrapper">
+
+                <div class="booking-info">
+
+                    <p class="eyebrow">RESERVE YOUR TABLE</p>
+
+                    <h2>
+                        Make your next
+                        <span>moment special.</span>
+                    </h2>
+
+                    <p>
+                        Whether it's dinner with friends, a family celebration
+                        or a quiet evening for two, we'd love to have you.
+                    </p>
+
+                    <div class="booking-details">
+
+                        <div>
+                            <span>📍</span>
+                            <p>
+                                24 Food Street<br>
+                                Islamabad, Pakistan
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>☎</span>
+                            <p>
+                                +92 300 1234567
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>◷</span>
+                            <p>
+                                Mon – Sun: 11:00 AM – 11:00 PM
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <form class="booking-form" id="bookingForm">
+
+                    <h3>Book a Table</h3>
+
+                    <p class="form-subtitle">
+                        Fill in your details and we'll confirm your reservation.
+                    </p>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="+92 300 0000000"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Time</label>
+
+                            <select id="time" required>
+                                <option value="">Select time</option>
+                                <option>12:00 PM</option>
+                                <option>1:00 PM</option>
+                                <option>2:00 PM</option>
+                                <option>5:00 PM</option>
+                                <option>6:00 PM</option>
+                                <option>7:00 PM</option>
+                                <option>8:00 PM</option>
+                                <option>9:00 PM</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="guests">Number of Guests</label>
+
+                        <select id="guests" required>
+                            <option value="">Select guests</option>
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5 Guests</option>
+                            <option>6+ Guests</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Special Request</label>
+
+                        <textarea
+                            id="message"
+                            rows="3"
+                            placeholder="Birthday, window seat, etc. (optional)"
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary full-btn">
+                        Reserve My Table
+                    </button>
+
+                    <div class="booking-message" id="bookingMessage"></div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TESTIMONIAL ================= -->
+        <section class="testimonial section">
+
+            <div class="container testimonial-content">
+
+                <p class="quote-mark">“</p>
+
+                <blockquote>
+                    The food was incredible, the atmosphere was beautiful,
+                    and the service made the whole evening feel special.
+                </blockquote>
+
+                <div class="reviewer">
+                    <div class="reviewer-avatar">A</div>
+
+                    <div>
+                        <strong>Ayesha Khan</strong>
+                        <span>Verified Guest · ★★★★★</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section class="contact section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-grid">
+
+                    <div>
+                        <p class="eyebrow">GET IN TOUCH</p>
+
+                        <h2>
+                            Come hungry.<br>
+                            <span>Leave happy.</span>
+                        </h2>
+                    </div>
+
+
+                    <div class="contact-info">
+
+                        <div>
+                            <span>ADDRESS</span>
+                            <p>
+                                24 Food Street<br>
+                                Islamabad, Pakistan
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>CONTACT</span>
+                            <p>
+                                +92 300 1234567<br>
+                                hello@savore.pk
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>OPENING HOURS</span>
+                            <p>
+                                Monday – Sunday<br>
+                                11:00 AM – 11:00 PM
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <a href="#home" class="logo footer-logo">
+                    SAVOR<span>É</span>
+                </a>
+
+                <p>
+                    Good food. Good mood.
+                </p>
+            </div>
+
+
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">TW</a>
+            </div>
+
+
+            <p class="copyright">
+                © <span id="year"></span> SAVORÉ. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= SUCCESS MODAL ================= -->
+    <div class="modal" id="successModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose">×</button>
+
+            <div class="success-icon">✓</div>
+
+            <h2>Reservation Received!</h2>
+
+            <p>
+                Thank you for choosing SAVORÉ. Your table request has been
+                successfully submitted.
+            </p>
+
+            <button class="btn btn-primary" id="modalButton">
+                Done
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
